@@ -1,0 +1,31 @@
+<div class="body">
+    <h1 style="text-align: center;">
+        {{item.image}}
+    </h1>
+    <div class="container">
+        
+        <img width="100%" src="{{item.image}}" alt=""/><br>
+        <p class="card-title">{{item.description |slice :0:100 }}....</p>
+        <a [routerLink]="['/districts',item.id]" class="btn btn-primary">View More</a>
+        <br><h1 style="text-align: center;">Gallery</h1><br>
+        <div class="row">
+            <div class="col-3 mx-4 p-3">
+                <img width="300px" height="200px" src="{{item.image}}"/>
+            </div>
+            <div class="col-3 mx-4 p-3">
+                <img width="300px" height="200px" src="{{item.image}}"/>
+            </div>
+            <div class="col-3 mx-4 p-3">
+                <img width="300px" height="200px" src="{{item.image}}"/>
+            </div>
+            <div class="col-3 mx-4 p-3">
+                <img width="300px" height="200px" src="{{item.image}}"/>
+            </div>
+            <div class="col-3 mx-4 p-3">
+                <img width="300px" height="200px" src="{{item.image}}"/>
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
